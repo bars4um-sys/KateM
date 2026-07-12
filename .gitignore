@@ -1,1 +1,17 @@
+# Jekyll
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.jekyll-cache
+
+# Bundler
+vendor/bundle/
+.bundle/
+
+# macOS
 .DS_Store
+
+# Редакторы
+*.swp
+.vscode/
+.idea/

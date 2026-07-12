@@ -1,0 +1,37 @@
+<section id="contacts">
+  <div class="container">
+    <div class="section-label reveal">Контакты</div>
+    <h2 class="section-title reveal reveal-delay-1">Связаться <span class="italic">со мной</span></h2>
+    <div class="contact-grid">
+      <div class="contact-info reveal reveal-delay-2">
+        <h3>Для сотрудничества и вопросов</h3>
+        <p>Открыта к научным проектам, кинопроизводству, преподавательской деятельности и культурным инициативам.</p>
+        <div class="contact-links">
+          <a href="mailto:moskvina@hse.ru" class="contact-link"><span class="ic">✉</span> moskvina@hse.ru</a>
+          <a href="#" class="contact-link"><span class="ic">🎓</span> НИУ ВШЭ</a>
+          <a href="#" class="contact-link"><span class="ic">📖</span> Российский союз германистов</a>
+          <a href="#" class="contact-link"><span class="ic">🎬</span> ВГИК</a>
+        </div>
+      </div>
+      <form class="contact-form reveal reveal-delay-3" id="contactForm" novalidate>
+        <div class="form-group">
+          <input type="text" id="fName" placeholder=" " required>
+          <label for="fName">Ваше имя</label>
+          <div class="form-error" id="errName">Пожалуйста, введите имя</div>
+        </div>
+        <div class="form-group">
+          <input type="email" id="fEmail" placeholder=" " required>
+          <label for="fEmail">Email</label>
+          <div class="form-error" id="errEmail">Введите корректный email</div>
+        </div>
+        <div class="form-group">
+          <textarea id="fMsg" placeholder=" " required></textarea>
+          <label for="fMsg">Сообщение</label>
+          <div class="form-error" id="errMsg">Введите сообщение</div>
+        </div>
+        <button type="submit" class="btn-submit">Отправить</button>
+        <div class="form-success" id="formSuccess">✓ Сообщение отправлено! Я свяжусь с вами в ближайшее время.</div>
+      </form>
+    </div>
+  </div>
+</section>

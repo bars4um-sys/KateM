@@ -1,0 +1,22 @@
+<section id="science">
+  <div class="container">
+    <div class="section-label reveal">Наука</div>
+    <h2 class="section-title reveal reveal-delay-1">Монографии и <span class="italic">исследования</span></h2>
+    <div class="books-grid">
+      {% for book in site.data.books %}
+        {% assign d = forloop.index0 | modulo: 3 %}
+        <div class="book-card reveal{% if d == 1 %} reveal-delay-1{% elsif d == 2 %} reveal-delay-2{% endif %}">
+          <div class="book-cover {{ book.cover_class }}">
+            <h4>{{ book.title }}</h4>
+            <div class="year">{{ book.year }}</div>
+          </div>
+          <div class="book-info">
+            <div class="pub">{{ book.pub }}</div>
+            <div class="pages">{{ book.info }}</div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    <p class="science-note reveal reveal-delay-3">Автор более двух десятков научных статей по германистике и проблемам экранизации. Член Российского союза германистов.</p>
+  </div>
+</section>

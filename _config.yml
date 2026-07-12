@@ -1,0 +1,19 @@
+title: Екатерина Москвина — Филолог · Режиссёр · Доцент НИУ ВШЭ
+description: Персональный сайт Екатерины Москвиной — филолога, режиссёра, доцента НИУ ВШЭ.
+lang: ru
+baseurl: ""
+url: ""
+
+permalink: pretty
+markdown: kramdown
+
+sass:
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - archive
+  - README.md

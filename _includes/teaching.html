@@ -1,0 +1,22 @@
+<section id="teaching">
+  <div class="container">
+    <div class="section-label reveal">Преподавание</div>
+    <h2 class="section-title reveal reveal-delay-1">Ведущие <span class="italic">университеты</span></h2>
+    <p class="section-intro reveal reveal-delay-2">С 2004 года преподаёт в ведущих московских университетах: МГПИ, ПСТГУ, ВГИК, НИУ ВШЭ, Школа кино и телевидения «Индустрия».</p>
+    <div class="teaching-grid">
+      {% for uni in site.data.teaching.universities %}
+        <div class="teaching-card reveal{% assign d = forloop.index0 | modulo: 3 %}{% if d == 1 %} reveal-delay-1{% elsif d == 2 %} reveal-delay-2{% endif %}">
+          <div class="icon">{{ uni.icon }}</div>
+          <h3>{{ uni.title }}</h3>
+          <div class="sub">{{ uni.sub }}</div>
+          <p>{{ uni.desc }}</p>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="disciplines reveal reveal-delay-3">
+      {% for discipline in site.data.teaching.disciplines %}
+        <span class="discipline-tag">{{ discipline }}</span>
+      {% endfor %}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,16 @@
+<section id="projects">
+  <div class="container">
+    <div class="section-label reveal">Проекты</div>
+    <h2 class="section-title reveal reveal-delay-1">Хроника <span class="italic">событий</span></h2>
+    <div class="timeline">
+      {% for event in site.data.timeline %}
+        {% assign d = forloop.index0 | modulo: 4 %}
+        <div class="timeline-item reveal{% if d == 1 or d == 2 %} reveal-delay-1{% elsif d == 3 %} reveal-delay-2{% endif %}">
+          <div class="timeline-year">{{ event.year }}</div>
+          <div class="timeline-title">{{ event.title }}</div>
+          <div class="timeline-desc">{{ event.desc }}</div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
