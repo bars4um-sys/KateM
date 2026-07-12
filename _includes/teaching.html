@@ -6,7 +6,7 @@
     <div class="teaching-grid">
       {% for uni in site.data.teaching.universities %}
         <div class="teaching-card reveal{% assign d = forloop.index0 | modulo: 3 %}{% if d == 1 %} reveal-delay-1{% elsif d == 2 %} reveal-delay-2{% endif %}">
-          <div class="icon">{{ uni.icon }}</div>
+          <div class="icon"><i data-lucide="{{ uni.icon }}"></i></div>
           <h3>{{ uni.title }}</h3>
           <div class="sub">{{ uni.sub }}</div>
           <p>{{ uni.desc }}</p>

@@ -3,6 +3,9 @@ window.addEventListener('load',()=>{
   setTimeout(()=>document.getElementById('preloader').classList.add('hidden'),800);
 });
 
+// ===== LUCIDE ICONS =====
+if(window.lucide){lucide.createIcons();}
+
 // ===== NAVIGATION =====
 const nav=document.getElementById('nav');
 const navBurger=document.getElementById('navBurger');
