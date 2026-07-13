@@ -7,8 +7,12 @@
         {% assign d = forloop.index0 | modulo: 3 %}
         <div class="book-card reveal{% if d == 1 %} reveal-delay-1{% elsif d == 2 %} reveal-delay-2{% endif %}">
           <div class="book-cover {{ book.cover_class }}">
-            <h4>{{ book.title }}</h4>
-            <div class="year">{{ book.year }}</div>
+            {% if book.cover %}
+              <img src="{{ book.cover | relative_url }}" alt="{{ book.title }}">
+            {% else %}
+              <h4>{{ book.title }}</h4>
+              <div class="year">{{ book.year }}</div>
+            {% endif %}
           </div>
           <div class="book-info">
             <div class="pub">{{ book.pub }}</div>

@@ -1,0 +1,22 @@
+<section id="podcasts">
+  <div class="container">
+    <div class="section-label reveal">Подкасты</div>
+    <h2 class="section-title reveal reveal-delay-1">Подкасты о <span class="italic">кино и литературе</span></h2>
+    <div class="podcasts-grid">
+      {% for podcast in site.data.podcasts %}
+        <a href="{{ podcast.url }}" target="_blank" rel="noopener" class="podcast-card reveal{% if forloop.index == 2 %} reveal-delay-1{% elsif forloop.index == 3 %} reveal-delay-2{% endif %}">
+          <div class="podcast-thumb">
+            <img src="{{ podcast.thumbnail }}" alt="{{ podcast.title }}">
+            <div class="podcast-play">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
+          <div class="podcast-info">
+            <h4>{{ podcast.title }}</h4>
+            <span class="podcast-source">{{ podcast.source }}</span>
+          </div>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>

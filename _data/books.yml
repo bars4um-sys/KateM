@@ -1,17 +1,20 @@
 - cover_class: b1
   title: Художественный мир Георга Бюхнера
   year: 2007
+  cover: /assets/img/books/Buchner.webp
   pub: "М.: Прометей — 200 с."
   info: Монография
 
 - cover_class: b2
   title: Символическая реальность
   year: 2017
+  cover: /assets/img/books/SimReal.webp
   pub: "М.: Глоба-Ком / ЯСК — 320 с."
   info: Статьи о немецкой и австрийской литературе. Переводы
 
 - cover_class: b3
   title: "Языковые игры: от слова к кадру"
   year: 2023
+  cover: /assets/img/books/LangGame.webp
   pub: "М.: Канон+ — 240 с."
   info: От текста к фильму
