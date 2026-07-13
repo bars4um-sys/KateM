@@ -10,7 +10,7 @@
             <div class="cinema-item">
               <div class="cinema-year">{{ item.year }}</div>
               <div class="cinema-content">
-                <h4>{{ item.title }}</h4>
+                <h4>{{ item.title }}{% if item.director %} <span class="italic">{{ item.director }}</span>{% endif %}</h4>
                 {% if item.desc and item.desc != "" %}<p>{{ item.desc }}</p>{% endif %}
               </div>
             </div>
