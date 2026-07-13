@@ -1,10 +1,11 @@
 // ===== PRELOADER =====
-window.addEventListener('load',()=>{
-  setTimeout(()=>document.getElementById('preloader').classList.add('hidden'),800);
-});
+function hidePreloader(){document.getElementById('preloader').classList.add('hidden');}
+setTimeout(hidePreloader,800);
+setTimeout(hidePreloader,4000);
 
 // ===== LUCIDE ICONS =====
-if(window.lucide){lucide.createIcons();}
+function initLucide(){if(window.lucide){lucide.createIcons();}else{setTimeout(initLucide,200);}}
+initLucide();
 
 // ===== NAVIGATION =====
 const nav=document.getElementById('nav');
