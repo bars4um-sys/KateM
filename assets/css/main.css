@@ -154,8 +154,8 @@ section{padding:6rem 0;position:relative}
 .timeline-desc{font-size:.88rem;color:var(--text-muted);line-height:1.6}
 
 /* ===== CONTACTS ===== */
-#contacts{background:var(--bg-white);color:var(--text-dark)}
-.contact-center{display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.5rem}
+#contacts{background:var(--bg-white);color:var(--text-dark);text-align:center}
+.contact-center{display:flex;flex-direction:column;align-items:center;gap:1.5rem}
 .contact-email{display:flex;align-items:center;gap:.6rem;font-size:1.05rem;color:var(--text-muted);font-weight:400}
 .contact-email i,.contact-email svg{width:18px;height:18px;color:var(--accent);stroke-width:1.5}
 .contact-buttons{display:flex;flex-wrap:wrap;gap:.8rem;justify-content:center}
