@@ -49,36 +49,6 @@ window.addEventListener('scroll',()=>{
   }
 });
 
-// ===== CONTACT FORM =====
-const form=document.getElementById('contactForm');
-form.addEventListener('submit',(e)=>{
-  e.preventDefault();
-  let valid=true;
-
-  const name=document.getElementById('fName');
-  const errName=document.getElementById('errName');
-  if(name.value.trim().length<2){errName.classList.add('show');valid=false;}
-  else{errName.classList.remove('show');}
-
-  const email=document.getElementById('fEmail');
-  const errEmail=document.getElementById('errEmail');
-  const emailRe=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if(!emailRe.test(email.value)){errEmail.classList.add('show');valid=false;}
-  else{errEmail.classList.remove('show');}
-
-  const msg=document.getElementById('fMsg');
-  const errMsg=document.getElementById('errMsg');
-  if(msg.value.trim().length<5){errMsg.classList.add('show');valid=false;}
-  else{errMsg.classList.remove('show');}
-
-  if(valid){
-    const success=document.getElementById('formSuccess');
-    success.classList.add('show');
-    form.reset();
-    setTimeout(()=>success.classList.remove('show'),5000);
-  }
-});
-
 // ===== SMOOTH SCROLL =====
 document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
   anchor.addEventListener('click',function(e){
